@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - EcectronicDevices
+name: Build and deploy JAR app to Azure Web App - SpringbootAPIDB
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'EcectronicDevices'
+          app-name: 'SpringbootAPIDB'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_e292c9701c3545a5b45453fedb5526f5 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_f815f2376ca44448b63bc7514a4366d0 }}
           package: '*.jar'
